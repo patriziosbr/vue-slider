@@ -14,19 +14,23 @@ var app = new Vue(
       },
       methods: {
         nextImg : function(){
-          if(this.indexImg == this.images.length -1) {
+          this.indexImg++
+          if(this.indexImg == this.images.length) {
             this.indexImg = 0  
-          } else {
-            this.indexImg++
-          }
+          } 
         },
         prevImg : function(){
-          if(this.indexImg == 0){
+          this.indexImg--
+          if(this.indexImg == -1){
             this.indexImg = this.images.length -1
-          } else {
-            this.indexImg--
           }
         }
-    }
+      },
+      created : function() {
+        const self = this;
+        setInterval(function(){
+          self.nextImg()
+         }, 3000);
+      }
 } 
 );
