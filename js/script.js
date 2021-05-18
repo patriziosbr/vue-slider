@@ -25,8 +25,8 @@ var app = new Vue(
             this.indexImg = this.images.length -1
           } else {
             this.indexImg--
+          }
         }
-      }
     }
 } 
 );

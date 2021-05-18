@@ -31,7 +31,7 @@
                 <i class="far fa-dot-circle"></i>
                 <i class="far fa-dot-circle"></i>
                 <i class="far fa-dot-circle"></i> -->
-                <i v-for="image, index in images" :class="index == indexImg ? 'active' : '' " class="far fa-dot-circle"></i>
+                <i @click="indexImg = index" v-for="image, index in images" :class="index == indexImg ? 'active' : '' " class="far fa-dot-circle"></i>
 
             </div>
         </div>
