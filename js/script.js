@@ -8,7 +8,7 @@ var app = new Vue(
          "https://images.alphacoders.com/265/265993.jpg",
          "https://cdn.hipwallpaper.com/i/52/2/oZbfun.jpg",
          "https://cdn.wallpapersafari.com/15/63/npAIt4.jpg"
-        
+         
        ],
        indexImg: 0
       },

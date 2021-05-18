@@ -25,6 +25,15 @@
             <div class="next">
                 <i @click="nextImg()" class="fas fa-arrow-right"></i>
             </div>
+            <div class="boxDot">
+                <!-- <i class="far fa-dot-circle active"></i>
+                <i class="far fa-dot-circle"></i>
+                <i class="far fa-dot-circle"></i>
+                <i class="far fa-dot-circle"></i>
+                <i class="far fa-dot-circle"></i> -->
+                <i v-for="image, index in images" :class="index == indexImg ? 'active' : '' " class="far fa-dot-circle"></i>
+
+            </div>
         </div>
         
 
